@@ -1,0 +1,41 @@
+id,resume_text,industry
+1,Software engineer experienced in Java Python Spring Boot REST API microservices and MySQL,Công nghệ thông tin
+2,Machine learning engineer working with TensorFlow PyTorch data analysis Python and big data,Công nghệ thông tin
+3,Web developer skilled in HTML CSS JavaScript React NodeJS building responsive websites,Công nghệ thông tin
+4,Mobile developer experienced with Android Kotlin Java Firebase REST API,Công nghệ thông tin
+5,DevOps engineer experienced with Docker Kubernetes AWS CI CD Linux servers,Công nghệ thông tin
+6,Business development manager experienced in strategic planning sales growth and market expansion,Quản trị kinh doanh
+7,Project manager managing business operations team leadership and business strategy,Quản trị kinh doanh
+8,Operations manager experienced in company management supply chain coordination and strategic planning,Quản trị kinh doanh
+9,Entrepreneur with experience in startup management business planning and leadership,Quản trị kinh doanh
+10,Business consultant specializing in management consulting corporate strategy and operations,Quản trị kinh doanh
+11,Digital marketing specialist experienced in SEO Google Ads Facebook Ads and social media campaigns,Marketing
+12,Marketing manager responsible for brand management market research and advertising strategy,Marketing
+13,Content marketing specialist experienced in social media analytics SEO blogging campaigns,Marketing
+14,Marketing analyst skilled in market research consumer behavior and campaign performance analysis,Marketing
+15,Social media manager handling brand communication advertising and digital marketing strategy,Marketing
+16,Financial analyst experienced in financial modeling forecasting accounting and Excel analysis,Tài chính - Kế toán
+17,Accountant experienced in financial reporting tax accounting auditing and bookkeeping,Tài chính - Kế toán
+18,Investment analyst skilled in portfolio management financial risk analysis and forecasting,Tài chính - Kế toán
+19,Finance manager responsible for corporate finance budgeting and financial planning,Tài chính - Kế toán
+20,Auditor experienced in internal audit risk management and financial compliance,Tài chính - Kế toán
+21,Human resources officer experienced in recruitment training employee relations and HR policies,Nhân sự
+22,HR manager responsible for talent acquisition performance management and employee engagement,Nhân sự
+23,Recruitment specialist skilled in candidate sourcing interviewing and onboarding processes,Nhân sự
+24,HR business partner experienced in organizational development and HR strategy,Nhân sự
+25,Payroll specialist managing salary benefits and employee compensation,Nhân sự
+26,UI UX designer experienced in Figma Adobe XD prototyping and user research,Thiết kế
+27,Graphic designer skilled in Adobe Photoshop Illustrator branding and visual design,Thiết kế
+28,Product designer experienced in user experience wireframing and usability testing,Thiết kế
+29,Creative designer working on branding packaging and digital design,Thiết kế
+30,Visual designer creating marketing graphics UI interfaces and branding assets,Thiết kế
+31,Logistics coordinator experienced in supply chain inventory management and transportation planning,Logistics
+32,Supply chain analyst working on logistics optimization warehouse management and operations,Logistics
+33,Operations logistics manager responsible for distribution and transportation management,Logistics
+34,Procurement specialist managing supplier relationships purchasing and supply chain planning,Logistics
+35,Warehouse manager responsible for inventory control and logistics operations,Logistics
+36,Teacher experienced in classroom teaching curriculum design and student assessment,Giáo dục
+37,Lecturer in computer science teaching programming algorithms and software engineering,Giáo dục
+38,Education consultant specializing in academic advising and curriculum development,Giáo dục
+39,Training specialist designing professional training programs and workshops,Giáo dục
+40,School administrator managing educational programs faculty and academic operations,Giáo dục

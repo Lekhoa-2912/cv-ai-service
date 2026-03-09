@@ -1,0 +1,237 @@
+/* Result Component ─ TalentIQ */
+
+.result-root {
+    display: flex;
+    flex-direction: column;
+    animation: resultIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes resultIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── VERDICT HEAD ──────────────────────────── */
+.vd-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 22px 18px;
+    background: linear-gradient(135deg,
+            rgba(var(--rc-parts, 78, 122, 255), 0.08) 0%,
+            transparent 60%);
+    /* dynamic tint via CSS custom property inherited */
+}
+
+.vd-industry-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.vd-eyebrow {
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--t3);
+    font-family: var(--mono);
+}
+
+.vd-industry-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.vd-industry-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--rc) 15%, transparent);
+    border: 1px solid color-mix(in srgb, var(--rc) 30%, transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--rc);
+    flex-shrink: 0;
+}
+
+.vd-name {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--t1);
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+}
+
+.vd-abbr-badge {
+    display: inline-block;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    font-family: var(--mono);
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin-top: 4px;
+}
+
+/* Level chip */
+.vd-level-chip {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 99px;
+    padding: 3px 10px;
+    width: fit-content;
+    border: 1px solid;
+}
+
+.lv-strong {
+    color: #0ED4A0;
+    background: rgba(14, 212, 160, 0.1);
+    border-color: rgba(14, 212, 160, 0.25);
+}
+
+.lv-likely {
+    color: #F4A030;
+    background: rgba(244, 160, 48, 0.1);
+    border-color: rgba(244, 160, 48, 0.25);
+}
+
+.lv-weak {
+    color: #FF7A92;
+    background: rgba(255, 68, 102, 0.1);
+    border-color: rgba(255, 68, 102, 0.25);
+}
+
+/* SVG Dial */
+.vd-dial-col {
+    flex-shrink: 0;
+}
+
+.arc-svg {
+    width: 84px;
+    height: 84px;
+}
+
+/* ── DIVIDER ───────────────────────────────── */
+.vd-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--bd-strong) 30%, var(--bd-strong) 70%, transparent);
+    margin: 0 18px;
+}
+
+/* ── BREAKDOWN ─────────────────────────────── */
+.vd-breakdown {
+    padding: 16px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bd-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bd-title {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--t3);
+}
+
+.bd-count {
+    font-size: 0.65rem;
+    color: var(--t4);
+    font-family: var(--mono);
+}
+
+.bd-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Row */
+.bd-row {
+    display: grid;
+    grid-template-columns: 22px 18px 1fr 90px 38px;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: background 0.15s;
+}
+
+.bd-row:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.bd-row.bd-top {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.065);
+}
+
+.bd-rank {
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: var(--t4);
+    font-family: var(--mono);
+    text-align: right;
+}
+
+.bd-icon {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+}
+
+.bd-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--t2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bd-row.bd-top .bd-name {
+    color: var(--t1);
+    font-weight: 600;
+}
+
+.bd-track {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.bd-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 0.8s cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+
+.bd-pct {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--t3);
+    font-family: var(--mono);
+    text-align: right;
+}

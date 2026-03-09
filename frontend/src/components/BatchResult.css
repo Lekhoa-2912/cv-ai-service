@@ -1,0 +1,223 @@
+/* BatchResult Component — TalentIQ */
+
+.br-root {
+    display: flex;
+    flex-direction: column;
+    animation: brIn 0.35s ease both;
+}
+
+@keyframes brIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── TỔNG KẾT ──────────────────────────────── */
+.br-summary {
+    display: flex;
+    gap: 1px;
+    background: var(--bd);
+    border-bottom: 1px solid var(--bd);
+}
+
+.br-stat {
+    flex: 1;
+    padding: 14px 18px;
+    background: var(--surface);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.br-stat-val {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--t1);
+    font-family: var(--mono);
+    letter-spacing: -0.03em;
+    line-height: 1;
+}
+
+.br-stat.success .br-stat-val {
+    color: var(--green);
+}
+
+.br-stat.fail .br-stat-val {
+    color: var(--rose);
+}
+
+.br-stat-lbl {
+    font-size: 0.67rem;
+    font-weight: 600;
+    color: var(--t3);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* ── DANH SÁCH ─────────────────────────────── */
+.br-list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 480px;
+}
+
+/* Row */
+.br-row {
+    display: grid;
+    grid-template-columns: 28px 1fr 1fr 130px;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 18px;
+    border-bottom: 1px solid var(--bd);
+    transition: background 0.15s;
+}
+
+.br-row:last-child {
+    border-bottom: none;
+}
+
+.br-row:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Row error */
+.br-row-fail {
+    grid-template-columns: 28px 1fr 1fr;
+    background: rgba(255, 68, 102, 0.04);
+}
+
+.br-row-num {
+    font-size: 0.63rem;
+    font-weight: 600;
+    color: var(--t4);
+    font-family: var(--mono);
+    text-align: right;
+}
+
+/* File name */
+.br-row-file {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.78rem;
+    color: var(--t3);
+    overflow: hidden;
+}
+
+.br-row-file span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Error message */
+.br-row-error {
+    grid-column: 3 / -1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.76rem;
+    color: #FF7A92;
+}
+
+/* Candidate */
+.br-row-candidate {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    overflow: hidden;
+}
+
+.br-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.br-candidate-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow: hidden;
+}
+
+.br-cname {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--t1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.br-fname {
+    font-size: 0.66rem;
+    color: var(--t4);
+    font-family: var(--mono);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Industry */
+.br-row-industry {
+    overflow: hidden;
+}
+
+.br-industry-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 99px;
+    padding: 3px 9px;
+    white-space: nowrap;
+}
+
+/* Confidence */
+.br-row-conf {
+    min-width: 0;
+}
+
+.br-conf-wrap {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.br-conf-track {
+    flex: 1;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.br-conf-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 0.7s ease;
+}
+
+.br-conf-val {
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-family: var(--mono);
+    min-width: 30px;
+    text-align: right;
+}
