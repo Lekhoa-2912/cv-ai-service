@@ -1,4 +1,4 @@
-# 🤖 TalentIQ — CV AI Service
+#TalentIQ — CV AI Service
 
 > **Hệ thống phân tích & phân loại CV tự động bằng Machine Learning**  
 > Dự đoán ngành nghề phù hợp của ứng viên từ nội dung CV (PDF hoặc văn bản thuần).
